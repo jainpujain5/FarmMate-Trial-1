@@ -14,6 +14,7 @@ const int penZDown = 83;
 const int penServoPin =10 ;
 
 // Should be right for DVD steppers, but is not too important here
+// Max steps for revolution 
 const int stepsPerRevolution = 48; 
 
 // create servo object to control a servo 
@@ -23,7 +24,7 @@ Servo penServo;
 AF_Stepper myStepperY(stepsPerRevolution,1);            
 AF_Stepper myStepperX(stepsPerRevolution,2);  
 
-/* Structures, global variables    */
+/* Structures, global variables*/
 struct point { 
   float x; 
   float y; 
